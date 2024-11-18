@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+main {
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1.5em;
+}
+
+.p-header {
+    margin: auto;
+    color: black;
+    margin-left: 670px;
+    padding-right: 30px;
+}
+
+.titulo {
+    color: black;
+    background-color: rgb(255, 196, 0);
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding-right: 170px;
+}
+
+.menu {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.a-menu {
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin: 0 20px;
+    position: relative;
+    transition: none;
+    display: inline-block;
+}
+
+.a-menu::before, .a-menu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 25px;
+    background-color: rgb(255, 196, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.a-menu::before {
+    left: -5px;
+    transform: translateY(-50%) scaleY(0);
+}
+
+.a-menu::after {
+    right: -5px;
+    transform: translateY(-50%) scaleY(0);
+}
+
+.a-menu:hover::before, .a-menu:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) scaleY(1);
+}
+
+.a-menu:hover {
+    padding-bottom: 0;
+}
+
+section {
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid rgb(255, 196, 0);
+    border-radius: 10%;
+    width: 40%;
+    height: 400px;
+}
+
+p{
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+strong{
+    color: rgb(255, 196, 0);
+}
+
+.titulo1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 196, 0);
+    padding-left: 90px;
+    margin-top: 40px;
+}
+
+.titulo2{
+    color: rgb(255, 196, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+#informacion {
+    margin: 20px;
+}
+
+#redes-sociales {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.redes {
+    text-decoration: none;
+    color: white;
+    margin-left: 65px;
+}
+
+.redes:hover {
+    color: gray;
+}
+
+.numero {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.numero:hover {
+    color: gray;
+}
+
+.espacio {
+    background-color: black;
+    height: 80px;
+}

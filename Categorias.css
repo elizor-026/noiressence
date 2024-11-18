@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1.5em;
+}
+
+.p-header {
+    margin: auto;
+    color: black;
+    margin-left: 670px;
+    padding-right: 30px;
+}
+
+.titulo {
+    color: black;
+    background-color: rgb(255, 196, 0);
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding-right: 170px;
+}
+
+.menu {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.a-menu {
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin: 0 20px;
+    position: relative;
+    transition: none;
+    display: inline-block;
+}
+
+.a-menu::before, .a-menu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 25px;
+    background-color: rgb(255, 196, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.a-menu::before {
+    left: -5px;
+    transform: translateY(-50%) scaleY(0);
+}
+
+.a-menu::after {
+    right: -5px;
+    transform: translateY(-50%) scaleY(0);
+}
+
+.a-menu:hover::before, .a-menu:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) scaleY(1);
+}
+
+.a-menu:hover {
+    padding-bottom: 0;
+}
+
+section {
+    display: flex;
+}
+
+.damas {
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+.caballeros {
+    margin-left: 232.5px;
+    cursor: pointer;
+}
+
+.categorias {
+    text-decoration: none;
+    color: black;
+    margin-right: 22px;
+}
+
+.categorias:hover {
+    text-decoration: underline;
+}
+
+#damas, #caballeros {
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px 0 20px 50px;
+}
+
+hr {
+    border: none;                
+    border-top: 5px solid black;    
+    opacity: 1; 
+}
+
+.destacados {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin: 30px 0 15px 0;
+    text-decoration: underline;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px 40px 20px 40px;
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(42, 182, 29);
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: rgb(42, 182, 29);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: rgb(35, 150, 24);
+}
+
+.buy-button:focus {
+    outline: none;
+}
+
+strong {
+    color: white;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    margin-top: 25px;
+    display: flex;
+}
+
+.final-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer {
+    height: 210px;
+    width: 180px;
+    margin: 45px;
+}
+
+.h4-footer{
+    color: white;
+    margin: 60px 40px 30px 120px ;
+}
+
+.p-footer {
+    color: gray;
+    font-size: 1em;
+    line-height: 0.5em;
+    margin-left: 120px;
+}
+
+.p-footer:hover {
+    color: rgb(75, 75, 75);
+}
